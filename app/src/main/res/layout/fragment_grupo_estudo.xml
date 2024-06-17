@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentGrupoEstudo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlunoFragment">
+
+    <EditText
+        android:id="@+id/edtTxtCdGrupoEstudo"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="67dp"
+        android:ems="10"
+        android:hint="Código"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/edtTxtNomeGrupoEstudo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="101dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rBtnOnline"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="Online" />
+
+        <RadioButton
+            android:id="@+id/rdBtnPresencial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Presencial" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnBuscarGrupoEstudo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="7dp"
+        android:text="Buscar"
+        app:layout_constraintBottom_toBottomOf="@+id/edtTxtCdGrupoEstudo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtTxtCdGrupoEstudo" />
+
+    <EditText
+        android:id="@+id/edtTxtNomeGrupoEstudo"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342" />
+
+    <TextView
+        android:id="@+id/grupoEstudo_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="Grupo de Estudo"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnExcluirGrupoEstudo"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="18dp"
+        android:text="Excluir"
+        app:layout_constraintBottom_toTopOf="@+id/btnTrocarFragment"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/edtTxtLinkGrupoEstudo"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:ems="10"
+        android:hint="Link da Reunião"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636" />
+
+    <Spinner
+        android:id="@+id/spDisciplina"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disciplinas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/spDisciplina"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/edtTxtSalaGrupoEstudo"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:ems="10"
+        android:hint="Sala da Reunião"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636" />
+
+    <Button
+        android:id="@+id/btnCadastrarGrupoEstudo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="11dp"
+        android:text="Cadastrar"
+        app:layout_constraintBottom_toBottomOf="@+id/btnExcluirGrupoEstudo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnExcluirGrupoEstudo" />
+
+    <Button
+        android:id="@+id/btnTrocarFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="17dp"
+        android:text="Avançar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnModificarGrupoEstudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="17dp"
+        android:text="Modificar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTxtDataGrupoEstudo"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:ems="10"
+        android:hint="Data da Reunião"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

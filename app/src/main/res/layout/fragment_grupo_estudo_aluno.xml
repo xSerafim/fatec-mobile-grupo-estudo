@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentGrupoEstudo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlunoFragment">
+
+    <Spinner
+        android:id="@+id/spAluno"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.188" />
+
+    <TextView
+        android:id="@+id/tvGpAluno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="47dp"
+        android:text="Selecione o Aluno"
+        app:layout_constraintBottom_toBottomOf="@+id/spAluno"
+        app:layout_constraintStart_toStartOf="@+id/spAluno" />
+
+    <TextView
+        android:id="@+id/grupoEstudo_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:text="Grupo de Estudo"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvGpAluno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRemoverAlunoGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="11dp"
+        android:text="Excluir"
+        app:layout_constraintBottom_toBottomOf="@+id/btnInserirAlunoGrupo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnInserirAlunoGrupo" />
+
+    <Button
+        android:id="@+id/btnVoltarGrupoEstudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="6dp"
+        android:text="Voltar"
+        app:layout_constraintBottom_toTopOf="@+id/tvExibeGrupos"
+        app:layout_constraintStart_toStartOf="@+id/tvExibeGrupos" />
+
+    <Button
+        android:id="@+id/btnListarGrupos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="6dp"
+        android:text="Listar"
+        app:layout_constraintBottom_toTopOf="@+id/tvExibeGrupos"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnInserirAlunoGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginBottom="66dp"
+        android:text="Inserir"
+        app:layout_constraintBottom_toBottomOf="@+id/btnVoltarGrupoEstudo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spGrupo" />
+
+    <Spinner
+        android:id="@+id/spGrupo"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.311" />
+
+    <TextView
+        android:id="@+id/tvGpGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecione o Grupo"
+        app:layout_constraintBottom_toTopOf="@+id/spGrupo"
+        app:layout_constraintStart_toStartOf="@+id/spGrupo" />
+
+    <TextView
+        android:id="@+id/tvExibeGrupos"
+        android:layout_width="0dp"
+        android:layout_height="313dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

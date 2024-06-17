@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentAluno"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlunoFragment">
+
+    <EditText
+        android:id="@+id/etRAAluno"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="62dp"
+        android:ems="10"
+        android:hint="RA"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/etNomeAluno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/aluno_header" />
+
+    <TextView
+        android:id="@+id/aluno_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="78dp"
+        android:text="Aluno"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBuscarAluno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnBuscarAluno"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="15dp"
+        android:text="Buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etIdadeAluno"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="14dp"
+        android:ems="10"
+        android:hint="Idade"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuscarAluno"
+        tools:text="Idade" />
+
+    <EditText
+        android:id="@+id/etNomeAluno"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="57dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/etIdadeAluno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnBuscarAluno" />
+
+    <Button
+        android:id="@+id/btnCadastrarAluno"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="14dp"
+        android:text="Cadastrar"
+        app:layout_constraintBottom_toBottomOf="@+id/btnExcluirAluno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnExcluirAluno" />
+
+    <Button
+        android:id="@+id/btnExcluirAluno"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        android:text="Excluir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etIdadeAluno" />
+
+    <Button
+        android:id="@+id/btnListarAlunos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Listar"
+        app:layout_constraintEnd_toEndOf="@+id/btnExcluirAluno"
+        app:layout_constraintTop_toBottomOf="@+id/btnExcluirAluno" />
+
+    <Button
+        android:id="@+id/btnModificarAlunos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Modificar"
+        app:layout_constraintStart_toStartOf="@+id/btnCadastrarAluno"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastrarAluno" />
+</androidx.constraintlayout.widget.ConstraintLayout>
